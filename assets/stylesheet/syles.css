@@ -69,7 +69,12 @@ body {
         place-content: center;
         border-radius: 10px;
     }
-/** Main wrapper css **/
+
+    /** Large screens **/
+
+    @media  screen and (max-width: 1440px) {
+
+        /** Main wrapper css **/
 
 .main-wrapper {
     position: absolute;
@@ -78,13 +83,16 @@ body {
     right: 0;
     bottom: 0;
     margin: auto;
-    height: 50%;
-    width: 75%;
+    max-height: 400px;
+    max-width: 700px;
     border-radius: 10px;
     box-shadow: 0px 5px 7px 2px var(--lite-lav);
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+
+/** left wrapper css **/
 
 .left-wrapper {
     background: linear-gradient(to top, var(--lite-royal-blue), var(--lite-slate-blue));
@@ -165,3 +173,8 @@ body {
     font-weight: 800;
 }
 
+
+
+    }
+
+/** Right side css **/
