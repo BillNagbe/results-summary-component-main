@@ -79,6 +79,46 @@ body {
         color: var(--drk-gry-blu);
     }
 
+
+   /** Small screens **/
+    
+   @media screen and (max-width: 375px){
+
+   
+
+   body, .main-wrapper, .left-wrapper, .right-wrapper {
+    position: static;
+    border-radius: 0;
+   }
+
+   .main-wrapper {
+    display: flex;
+    flex-direction: column;
+    
+   }
+
+   }
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /** Large screens **/
 
     @media  screen and (max-width: 1440px) {
@@ -126,7 +166,7 @@ body {
 
 .left-overall-score-wrapper {
     width: 100%;
-    height: 20vh;
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,18 +230,18 @@ body {
     }
 
     .right-header-wrapper {
-        text-align: left;
-        width: 100%;
+        width: 50%;
+        margin-right: 30%;
     }
 
     .right-header-wrapper h4 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     
 
     .right-result-wrapper {
-        width: 100%;
+        width: 80%;
         height: 60%;
         display: flex;
         flex-direction: column;
@@ -225,22 +265,22 @@ body {
 
     .red {
         color: var(--lght-red);
-        background-color: hsla(0, 100%, 67%, 0.2);
+        background-color: hsla(0, 100%, 67%, 0.1);
     }
 
     .yellow {
         color: var(--org-yllw);
-        background-color: hsla(39, 100%, 56%, 0.2);
+        background-color: hsla(39, 100%, 56%, 0.1);
     }
 
     .green {
         color: var(--grn-teal);
-        background-color: hsla(166, 100%, 37%, 0.2);
+        background-color: hsla(166, 100%, 37%, 0.1);
     }
 
     .blue {
         color: var(--clbt-blue);
-        background-color: hsla(234, 85%, 45%, 0.2);
+        background-color: hsla(234, 85%, 45%, 0.1);
     }
 
 
