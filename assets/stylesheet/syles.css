@@ -33,3 +33,60 @@
         --lght-lav: hsl(241, 100%, 89%);
         --drk-gry-blu: hsl(224, 30%, 27%);
 }
+
+/** General styles **/
+
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: var(--pale-blue);
+    font-family: var(--ff);
+    font-weight: var(--fw-500);
+    position: relative;
+}
+
+.attribution { 
+    font-size: 1rem; 
+    text-align: center; 
+    position: fixed;
+    bottom: 0; 
+    left: 0; 
+    margin: 0 auto;
+    width: 100%;
+    };
+
+    .attribution a  { 
+        color: hsl(228, 45%, 44%);
+    
+    }
+
+    .left-wrapper, .right-wrapper {
+        width: 100%;
+        display: grid;
+        place-content: center;
+        outline: 1px solid;
+        border-radius: 10px;
+    }
+/** Main wrapper css **/
+
+.main-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 60vh;
+    width: 60vw;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px var(--lght-lav);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.result-wrapper {
+    height: 50vh;
+    outline: 1px solid red;
+}
