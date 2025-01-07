@@ -50,7 +50,6 @@ body {
     font-size: var(--fs);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 
@@ -63,7 +62,7 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 100vw;
-    height: 80vh;
+    height: 95vh;
 }
 
 /** general styles **/
@@ -71,8 +70,6 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 40vh;
 }
 
 .left-header-wrapper h4, .left-flat-score, .left-text-wrapper p{
@@ -81,11 +78,14 @@ body {
 /** left wrapper **/
 
 .left-wrapper {
+    justify-content: space-around;
     text-align: center;
     color: var(--pale-blue);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     font-weight: 900;
+    outline: 1px solid red;
+    height: 45%;
     background: linear-gradient(to top, var(--lite-royal-blue) 50%, var(--lite-slate-blue));
 }
 
@@ -154,11 +154,9 @@ body {
 
 .right-wrapper {
     width: 85%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin: 0 auto;
-    gap: 0.5rem;
+    margin: 1rem auto;
+    height: 60%;
+    gap: 1rem;
 }
 
 /* right header  */
@@ -202,18 +200,43 @@ body {
     background-color: hsla(0, 100%, 67%, 0.15);
 }
 
+.red-txt {
+    color: hsl(0, 100%, 67%);
+}
+
 .yellow {
     background-color: hsla(39, 100%, 56%, 0.15);
 }
 
+.yell-txt {
+    color: hsl(39, 100%, 56%);
+}
+
+
 .blue {
     background-color: hsl(234, 85%, 45%, 0.15);
+}
+
+.ble-txt {
+    color: hsl(234, 85%, 45%);
 }
 
 .green {
     background-color: hsl(166, 100%, 37%, 0.15);
 }
 
+.grn-txt {
+    color: hsl(166, 100%, 37%);
+}
+
+.bold {
+    font-weight: 550;
+}
+
+.flat {
+    font-weight: 200;
+    color: grey;
+}
 
 
 
@@ -222,14 +245,14 @@ body {
 .right-btn-wrapper {
     height: fit-content;
     width: 100%;
-    margin: 4rem auto;
+    margin: 1rem auto;
 }
 
 .right-btn-wrapper button {
     width: 100%;
     border-radius: 25px;
     border: none;
-    padding: 0.5rem;
+    padding: 1rem;
     background-color: var(--drk-gry-blu);
     color: var(--pale-blue);
 }
@@ -238,6 +261,9 @@ body {
 
 footer {
     text-align: center;
-    outline: 1px solid;
     font-size: calc(var(--fs) / 1.3);
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
